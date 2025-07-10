@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comment Classification</h1>
+    <form method="POST">
+        <textarea name="text" placeholder="Enter your comment here..." required></textarea><br>
+        <button type="submit">Check Comment</button>
+    </form>
+
+    {% if prediction is not none %}
+        <p class="result">
+            {% if prediction == 0 %}
+                ✅ This comment is **appropriate**.
+            {% else %}
+                ❌ This comment is **inappropriate**.
+            {% endif %}
+        </p>
+    {% endif %}
+
+</body>
+</html>

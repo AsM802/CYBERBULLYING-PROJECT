@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.whl
+
+# Virtual environment
+cyberb/
+
+# Model files
+*.pkl
+
+# Jupyter notebook
+model.ipynb

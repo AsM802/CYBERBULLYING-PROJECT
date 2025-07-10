@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Cyber Shield</title>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+   
+        <video class="video-background" autoplay loop muted playsinline>
+            <source src="assets/pinterestdownloader.com-1742213437.919642.webm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <header class="header">
+            <div class="shield-container">
+                <img src="images/Download_Loop_animation_of_glossy_shield_with_dark_background__3d_rendering__for_free-removebg-preview.png" alt="Cyber Shield" class="shield-image">
+                <h1 class="shield-text">CYBER SHIELD</h1>
+            </div>
+        </header>
+    
+    <main class="main">
+        <div class="comment-box">
+            <textarea id="comment" placeholder="Add a comment..."></textarea>
+            <button onclick="postComment()">Post Comment</button>
+        </div>
+    </main>
+
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button class="close-button" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+</html>
